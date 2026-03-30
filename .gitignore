@@ -1,10 +1,49 @@
-# Ignore dataset folders
-# lidar_corrupt
-# original
-# weather
 
-# Ignore file types
+# General ignores
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.cache
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+
+# Dataset: block everything
+nusc-mini-sim/**/*
+
+
+# Allow directory structure
+!nusc-mini-sim/
+!nusc-mini-sim/**/
+
+
+# Allow placeholder files
+!nusc-mini-sim/**/.keep
+!nusc-mini-sim/**/.gitkeep
+
+
+# Explicitly ignore heavy data types
+# (defensive layer)
+*.pcd
 *.bin
-*.png
+*.npy
+*.npz
 *.jpg
+*.jpeg
+*.png
+*.tiff
 *.json
+*.pkl
+
+
+
+# keep important metadata if needed
+# !nusc-mini-sim/**/README.md
