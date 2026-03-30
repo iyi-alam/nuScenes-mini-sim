@@ -1,0 +1,10 @@
+# Ignore dataset folders
+# lidar_corrupt
+# original
+# weather
+
+# Ignore file types
+*.bin
+*.png
+*.jpg
+*.json
