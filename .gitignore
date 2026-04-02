@@ -42,6 +42,7 @@ nusc-mini-sim/**/*
 *.tiff
 *.json
 *.pkl
+*.zip
 
 
 
