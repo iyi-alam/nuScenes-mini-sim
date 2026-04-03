@@ -33,7 +33,7 @@ def weather_stats_and_plot(nusc: NuScenes, sample: dict, simulation_dir, noise_l
 if __name__  == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--nusc-root", type=str, help="Path to the NuScenes dataset", default="original")
-    parser.add_argument("--fault", type=str, help="Type of fault to analyze", choices=["fog", "rain", "snow"])
+    parser.add_argument("--fault", type=str, help="Type of fault to analyze", choices=["fog_stf", "fog_wedit", "rain", "snow"])
     parser.add_argument("--sample-index", type=int, help="Index of the sample to analyze", default=0)
     args = parser.parse_args()
 

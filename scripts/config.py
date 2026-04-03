@@ -3,7 +3,12 @@ Configurations for helping in analysis and visualization
 """
 
 class LiDARSimulations:
-    fog = dict(
+    fog_wedit = dict(
+        noise_label=1,
+        drop_label=1,
+        simulation_dir = "weather/fog_wedit"
+    )
+    fog_stf = dict(
         noise_label=1,
         drop_label=1,
         simulation_dir = "weather/fog_stf"
