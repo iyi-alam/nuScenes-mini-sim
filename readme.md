@@ -91,3 +91,7 @@ python scripts/weather_stats.py \
         --fault "fog_stf" \
         --sample-index 50
 ```
+
+# To do
+
+ - [ ] Modification of camera instrinsic matrices to account for modified image size post simulation
